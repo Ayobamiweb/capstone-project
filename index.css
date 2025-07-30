@@ -6,7 +6,7 @@
 
 
 header {
-    background-color:green;
+    background-color:grey;
     padding: 20px;
 }
 .navlink {
@@ -21,14 +21,15 @@ header {
 a {
     text-decoration: none;
 }
-.navbar {background-color: goldenrod;
-    opacity: 0.8;
-    padding: 20px;
+.navbar {
+    /* background-color: goldenrod; */ 
+    /* opacity: 0.8; */
+    /* padding: 10px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     font-size: x-large;
-    align-items: center;
+    /* align-items: center; */
 }
 .dropdown {
     position: relative;
@@ -49,12 +50,9 @@ a {
 }
 .dropdown:hover .dropdown-content {
     display: block;
-    background-color: cornflowerblue;
+    background-color: gray;
 }
-/* .dropdown:hover .down { 
-    background-color: black;
-    color: red;
-}*/
+
 .dropdown:hover a:hover {
     background-color: black;
 }
@@ -64,8 +62,11 @@ a {
     background-attachment: scroll;
     padding: 100px;
 }
+section {
+    font-size: larger;
+}
 
-.borders {
+ /* .borders {  
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -74,12 +75,13 @@ a {
     position:static;
     right:  10%;
     top:  20px;
-}
+}*/
  
 .logo {
     width: 10%;
 }
-.borders a {
+/*
+.borders a{
     background-color:green;
     opacity: 0.5;
     color: aliceblue;
@@ -93,6 +95,29 @@ a {
 
 .borders a:hover{
     background-color:green;
-} 
+ } */ 
+  .div2 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  .flex {
+    display: flex;
+    width: 300px;
+    padding: 30px;
+  }
+.cont {display: flex;
+    border: 5px solid;
+    padding: 300px;
+    margin: 10px;
+    width: 63%;
+    background-color: goldenrod;
+}
 
-
+.borders {display: flex;
+    justify-content: space-between;
+    border:150px solid lightgray;
+    padding: 50px;
+    margin:10px;
+    font-size: larger;
+}
