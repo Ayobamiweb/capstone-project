@@ -34,14 +34,10 @@ a {
 }
 
 .navbar {
-    /* background-color: goldenrod; */
-    /* opacity: 0.8; */
-    /* padding: 10px; */
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     font-size: x-large;
-    /* align-items: center; */
 }
 
 .dropdown {
@@ -58,7 +54,6 @@ a {
     position: absolute;
     width: 100%;
     padding: 50px 50px;
-    margin-top: 20px;
     box-shadow: 200px;
     z-index: 1;
 }
@@ -67,71 +62,50 @@ a {
     background-color: gray;
     display: block;
 }
-
-hr {
-    width: 100%;
-
-}
-
-h2 {
-    color: white;
-    font-size: larger;
-}
-
-h1 {
-    color: cornflowerblue;
-    font-size: large;
-}
-
-section {
-    font-size: larger;
-}
-
-
-
+/* to make the logo small */
 .logo {
     width: 10%;
 }
-
+/* to differentiate the h1 from h2 */
+h2 {
+    font-size: 1.2cm;
+    color: blue;
+}
+.sec {background-color: lightgrey;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2px;
+    align-items: center;
+}
+/* to give space so that the image will not touch the nav line */
 .div2 {
+    padding: 20px;
+}
+.sect {
+     padding: 20px; 
+    font-size: larger;
+}
+hr {
+    background-color: blue;
+}
+/*  */
+.supp {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
+    justify-content:space-around;
+    gap: 20px;
 
-.flex {
+}
+/* to make the image more bigger in size and be more seen */
+.sup {
     display: flex;
     width: 300px;
-    padding: 30px;
+    margin-top: 30px;
+    height: 300px;
 }
-
-.cont {
-    display: flex;
-    border: 5px solid;
-    padding: 300px;
+.name {
+    width: 30%;
     margin: 10px;
-    /* width: 63%; */
-    background-color: goldenrod;
+    height: 80px;
+    
 }
-
-.sec {
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    /* justify-content: left; */
-    gap: 20px;
-    background-color: lightgray;
-
-}
-
-.div1 { width: 300px;
-    /* display: flex; */
-    flex-direction: row;
-    background-color: lightgray;
-}
-
-/* .fle {width: 200px;
-    display: flex;
-    justify-content: space-between;
-
-} */
