@@ -9,13 +9,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
 
 header
 {
     background-color: grey;
-    padding: 20px;
+    padding: 10px;
 }
 
 .navlink {
@@ -23,10 +23,7 @@ header
     gap: 40px;
     padding: 20px;
     margin: 15px;
-}
-
-.navlink li {
-    list-style: none;
+    list-style: none
 }
 
 a {
@@ -37,7 +34,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    font-size: x-large;
+    font-size: 2.5rem;
 }
 
 .dropdown {
@@ -64,14 +61,20 @@ a {
 }
 /* to make the logo small */
 .logo {
-    width: 10%;
+    width: 8%;
 }
 /* to differentiate the h1 from h2 */
 h2 {
-    font-size: 1.2cm;
+    font-size: 1.7cm;
     color: blue;
 }
-.sec {background-color: lightgrey;
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec {
+    background-color: lightgrey;
     display: flex;
     justify-content: space-evenly;
     gap: 2px;
@@ -82,13 +85,22 @@ h2 {
     padding: 20px;
 }
 .sect {
-     padding: 20px; 
-    font-size: larger;
+     padding: 10px;
+     margin-top: 40px; 
+    font-size:1.4rem;
+}
+.cla {
+    margin-bottom: 30px;
 }
 hr {
     background-color: blue;
 }
-/*  */
+.hh {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
 .supp {
     display: flex;
     flex-direction: row;
@@ -103,9 +115,32 @@ hr {
     margin-top: 30px;
     height: 300px;
 }
+form {
+    display: grid;
+}
 .name {
     width: 30%;
     margin: 10px;
-    height: 80px;
-    
+    height: 80px; 
+}
+input::placeholder {
+    font-size:30px;
+    text-align: center;
+}
+.par{
+    padding: 20px;
+    font: 1em sans-serif;
+    font-size: 1.2cm;
+}
+.para {
+    background-color: lightgray;
+    margin-top: 60px;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+
+}
+.pa {
+    margin-top: 60px;
+    font-size: 1.2cm;
 }
