@@ -14,19 +14,20 @@
 header
 {
     /* background-color: #EA580C; */
-    background-color: chocolate;
+    background-color: lightblue;
     padding: 10px;
 }
+
 
 .navlink {
     display: flex;
     gap: 40px;
     padding: 20px;
     margin: 15px;
-    list-style: none
+    list-style: none; 
 }
 
-a {
+ a {
     text-decoration: none;
 }
 
@@ -36,58 +37,55 @@ a {
     flex-direction: row;
     font-size: 1.5rem;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.down {
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%;
-    padding: 50px 50px;
-    box-shadow: 200px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    background-color: gray;
-    display: block;
+.search-bar {
+    padding-top: 20px;
 }
 /* to make the logo small */
 .logo {
     width:170px;
 }
 body {
-    background-color:lightgray;
+    background-color:darkgray;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.canva {
+    width: 700px;
+    height: 600px;
+    /* padding-top: 40px; */
+}
+/* .gem {
+    display: flex;
+} */
 /* to differentiate the h1 from h2 */
 h2 {
-    font-size: 1.7cm;
-    color: blue;
+    font-size: 3.5cm;
+    color: navy;
 }
 h1 {
-    color: chocolate;
+    color:navy;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 2rem;
+    padding: 20px;
 }
 h3 {
-    font-size: larger;
+    font-size: 0.8cm;
 }
 .sec {
-    background-color: teal;
+    background-color:#fafafa;
     display: flex;
-    justify-content: space-evenly;
-    gap: 2px;
+    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
+.gema {
+    text-align: center;
+    align-items: center;
+    padding-left: 300px;
+}
+
+
 .div2 {
     display: block;
     flex-direction: row;
@@ -105,6 +103,7 @@ h3 {
     height: 300px;
     width: 400px;
 }
+
 
 .order {
     display: flex;
@@ -158,16 +157,20 @@ hr {
    margin-bottom: 20px;
    align-items: center;
 }
-.gam {
+.gam  {
     padding-left: 30px;
+}
+.gam img{
+    width: 500px;
+    height: 400px;
 }
 .nam {
     text-align: center;
     padding: 30px;
 }
 .diva {
-    background-color: teal;
-    border: 10px solid teal;
+    background-color: white;
+    border: 10px solid white;
     margin-left: 600px;
     margin-right:500px;
 }
@@ -184,7 +187,7 @@ input::placeholder {
    }
 
 button {
-    background-color: lightblue;
+    background-color:lightgreen;
     padding: 20px;
     padding-bottom: 20px;
     font-size: 20px;
@@ -192,7 +195,7 @@ button {
 
 button a:hover
 {
-    background-color:teal;
+    background-color:green;
     padding: 5px;
 }
 .par{
@@ -213,19 +216,68 @@ button a:hover
     font-size: 1.2cm;
 }
 
-img:hover 
+.imag:hover 
 {
     transform: scale(1.3);
  }  
-footer {
-    background-color: teal;
-} 
+.set {
+    list-style: none;
+}
 
-@media (max-width:400px) {
-    body {
-        background-color: navy;
+.gem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+}
+.geme {
+    display: flex;
+    justify-content:space-between;
+}
+.pag {
+    text-align:center;
+ }
+ @media (max-width: 1024px) {
+    h2 {
+        font-size: 2rem;
     }
-    nav {
-        font-size: larger;
+    .order {
+        font-size: 1rem;
+        justify-content: center;
+    }
+}
+ @media (max-width:768px) {
+    .navbarb{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navlink {
+        justify-content: center;
+        gap: 20px;
+    }
+    .game {
+        flex-direction: column;
+    }
+ }
+ @media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .navlink {
+        flex-direction: column;
+        align-items: center;
+    }
+    .order {
+        flex-direction: column;
+        align-items: center;
+    }
+    .diva {
+        width: 90%;
+    }
+    .gam img {
+        max-width: 100%;
     }
 }
