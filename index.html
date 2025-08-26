@@ -4,14 +4,70 @@
 <head>
     <title>DRUGS ILLICIT</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        .awa {
+            text-align: center;
+            margin-top: 60px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    .slider {
+      width: 100vw;  /* full width */
+      height: 90vh; /* full height */
+      overflow: hidden;
+      position: relative;
+      padding-top: 50px;
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 70%;
+      animation: slideShow 16s infinite; /* adjust time if you add more images */
+    }
+
+    .slides img {
+      width: 100vw;
+      height: 90vh;
+      object-fit: cover; /* keeps images proportional, fills screen */
+      flex-shrink: 0;
+    }
+    
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfectly center */
+  color: #333333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px white; /* makes text readable */
+}
+
+    /* Animation for infinite slideshow */
+    @keyframes slideShow {
+      0%   { transform: translateX(0%); }
+      30%  { transform: translateX(0%); }
+
+      35%  { transform: translateX(-100%); }
+      45%  { transform: translateX(-100%); }
+
+      55%  { transform: translateX(-200%); }
+      70%  { transform: translateX(-200%); }
+
+      80%  { transform: translateX(-300%); }
+      95%  { transform: translateX(-300%); }
+
+      100% { transform: translateX(0%); } /* loop back */
+    }
+    </style>
 </head>
 
 <body>
      <header>
         <nav class="navbar">
-                      <a href="index.html" target="_parent">
-                <img src="logorem.png" alt="logo" class="logo"></a>
+                <img src="images/logorem.png" alt="logo" class="logo"></a>
             <ul class="navlink">
+                <li><a href="#index">HOME</a></li>
                 <li><a href="fact.html">FACT</a></li>
                 <li><a href="Drugs and effect.html">DRUGS AND EFFECT</a></li>
                 <li><a href="support group.html" target="_self">SUPPORT GROUP</a></li>
@@ -24,55 +80,51 @@
             </form>
         </nav>
     </header>
-    <section class="sec">
-        <div class="gema">
-            <h3>AWARENESS AND ABUSE OF</h3>
-            <h2>ILLICIT <br> DRUGS</h2>
-            
-        </div>
-        <div class="gama">
-            <img src="Canva.png" alt="background image" class="canva">
-        </div>
+    <section>
+      <div class="slider">
+    <div class="slides">
+        <img src="images/IMG_7628.jpeg" alt="Image 1">
+      <img src="images/IMG_8246.jpeg" alt="Image 2">
+        <img src="images/IMG_8269.jpeg" alt="Image 3">
+      <img src="images/IMG_8260.jpeg" alt="Image 4">
+    </div>
+  </div>
+  <section class="center-text">
+        <h3 style="font-size: 3rem; text-align: center;">AWARENESS OF</h3>
+        <h2 style="font-size: 7rem;">DRUG ABUSE</h2>
     </section>
-     <section class="sect" style="background-color: teal; padding-top: 30px;">
+</body>
+ <footer>
+         <section class="sect" style="background-color: teal; padding-top: 30px;">
         <div class="gem">
             <div>
         <ul class="set">
             <li><a href="https://nida.nih.gov">Research Topics</a></li><br>
-            <li><a href="https://nida.nih.gov">Research & Training</a></li><br>
-            <li><a href="https://nida.nih.gov">NIDAMED:Clinical Resources</a></li><br>
-            <li><a href="https://nida.nih.gov">Grants and Funds</a></li><br>
+            <li><a href="https://nida.nih.gov">Project Done So Far</a></li><br>
+          
+        </ul>
+            </div>
+            <div>
+            <ul class="set">
+            <li><a href="https://nida.nih.gov">Support Us</a></li><br>
             <li><a href="https://nida.nih.gov">News and Event</a></li><br>
         </ul>
         </div>
         <div class="gem">
             <ul class="set">
-             <li><a href="https://nida.nih.gov">Accessibility and Section information</a></li><br>
             <li><a href="https://nida.nih.gov">Privacy notice</a></li><br>
-            <li><a href="https://nida.nih.gov">Vulnerability Disclosure (HHS)</a></li><br>
-            <li><a href="https://nida.nih.gov">Freedom of Information</a></li><br>
             <li><a href="https://nida.nih.gov">Frequently Asked Questions</a></li><br>
             </ul>
         </div>
-            <!-- <ul class="set">
-             <p><a href="https://nida.nih.gov"> Department of Health and Human Services</a></p>
-             <br>
-            <p><a href="https://nida.nih.gov">National Institues of Health</a></p>
-            <br>
-            <p><a href="https://nida.nih.gov">National INstitue on Drug Abuse</a></p>
-            </ul><br> -->
         </div>
          <br>
         <br>
-        <br>
-        <br>
-        <br>
-     <footer style="background-color: teal;">
-            <div class="geme">
+        <br>           
+        <div class="geme">
             <div>
               <ul class="set">
                 <hr>
-             <li><a href="https://nida.nih.gov"> Department of Health and Human Services</a></li>
+             <li><a href="https://nida.nih.gov">References</a></li>
               </div>
              <div>
                 <ul class="set">
@@ -83,14 +135,15 @@
               <div>
                 <ul class="set">
                     <hr>
-            <li><a href="https://nida.nih.gov">National INstitue on Drug Abuse</a></li>
+            <li><a href="https://nida.nih.gov">National Institue on Drug Abuse</a></li>
+                </ul>
             </div>
-        </ul>
         </div>
+        <br>
+        <br>
         <br>
         <br>
         <p class="pag">&copy; 2025 My Website | All Rights Reserved</p>
     </footer>
-</body>
 </html>
                     

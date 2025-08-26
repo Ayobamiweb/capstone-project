@@ -1,92 +1,139 @@
+<style>
+  
+    /* Animation for infinite slideshow */
+    @keyframes slideShow {
+      0%   { transform: translateX(0%); }
+      20%  { transform: translateX(0%); }
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Slider</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f5f5f5;
+      45%  { transform: translateX(-100%); }
+      55%  { transform: translateX(-100%); }
+
+      75%  { transform: translateX(-200%); }
+      75%  { transform: translateX(-200%); }
+
+      85%  { transform: translateX(-300%); }
+      95%  { transform: translateX(-300%); }
+
+      100% { transform: translateX(0%); } /* loop back */
     }
+.slides {
+  display: flex;
+  width: 100%;  /* 4 slides */
+  height: 100%;
+  animation: slideShow 30s infinite;
+}
 
-    .slider {
-      width: 500px;
-      height: 300px;
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+.slide {
+  position: relative;
+  width: 100vw;
+  flex-shrink: 0;
+}
 
-    .slides {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.5s ease-in-out;
-    }
+.slide img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
 
-    .slides img {
-      width: 500px;
-      height: 300px;
-      object-fit: cover;
-    }
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+</style>
 
-    /* Optional: Navigation buttons */
-    .prev, .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0,0,0,0.5);
-      color: #fff;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 50%;
-    }
-
-    .prev { left: 10px; }
-    .next { right: 10px; }
-  </style>
-</head>
-<body>
   <div class="slider">
-    <div class="slides" id="slides">
-      <img src="opoid.jpg" alt="Image 1">
-      <img src="img.jpg" alt="Image 2">
-      <img src="inj.jpg" alt="Image 3">
-      <img src="peg.jpg" alt="Image 4">
+  <div class="slides">
+
+    <div class="slide">
+      <img src="images/IMG_7628.jpeg" alt="Image 1">
+      <div class="center-text">
+        <h3>AWARENESS OF</h3>
+        <h2>DRUG ABUSE</h2>
+      </div>
     </div>
-    <button class="prev" onclick="prevSlide()">❮</button>
-    <button class="next" onclick="nextSlide()">❯</button>
+
+    <div class="slide">
+      <img src="images/IMG_8246.jpeg" alt="Image 2">
+      <div class="center-text">
+        <h3>FACTS ABOUT</h3>
+        <h2>DRUGS</h2>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/IMG_8269.jpeg" alt="Image 3">
+      <div class="center-text">
+        <h3>JOIN OUR</h3>
+        <h2>SUPPORT GROUP</h2>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="images/IMG_8260.jpeg" alt="Image 4">
+      <div class="center-text">
+        <h3>STOP</h3>
+        <h2>DRUG ABUSE</h2>
+      </div>
+    </div>
+
   </div>
+</div>
+<!-- 
+<style>
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;      /* full screen slider */
+  overflow: hidden;
+}
 
-  <script>
-    let index = 0;
-    const slides = document.getElementById("slides");
-    const total = slides.children.length;
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-    function showSlide() {
-      slides.style.transform = `translateX(${-index * 500}px)`;
-    }
+.slide.active {
+  opacity: 1;
+}
 
-    function nextSlide() {
-      index = (index + 1) % total;
-      showSlide();
-    }
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    function prevSlide() {
-      index = (index - 1 + total) % total;
-      showSlide();
-    }
-
-    // Auto-slide every 3 seconds//
-    setInterval(nextSlide, 3000);
-  </script>
-</body>
-</html>
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+</style>
+<div class="slider">
+  <div class="slide active">
+    <img src="images/canan.jpg" alt="Slide 1">
+    <div class="slide-text">Welcome to My Site</div>
+  </div>
+  <div class="slide">
+    <img src="images/can.jpg" alt="Slide 2">
+    <div class="slide-text">Facts About Drugs</div>
+  </div>
+  <div class="slide">
+    <img src="images/caca.jpg" alt="Slide 3">
+    <div class="slide-text">Join Our Support Group</div>
+  </div>
+</div> -->
