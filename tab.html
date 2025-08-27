@@ -1,139 +1,140 @@
+
 <style>
-  
-    /* Animation for infinite slideshow */
-    @keyframes slideShow {
-      0%   { transform: translateX(0%); }
-      20%  { transform: translateX(0%); }
+/* ===============================
+       Footer Variables
+=============================== */
+:root {
+  --footer-bg: teal;
+  --footer-text: white;
+  --footer-link: white;
+  --footer-link-hover: lightgray;
+  --footer-padding: 30px;
+  --footer-gap: 20px;
+  --footer-hr: #ffffff50;
+}
 
-      45%  { transform: translateX(-100%); }
-      55%  { transform: translateX(-100%); }
-
-      75%  { transform: translateX(-200%); }
-      75%  { transform: translateX(-200%); }
-
-      85%  { transform: translateX(-300%); }
-      95%  { transform: translateX(-300%); }
-
-      100% { transform: translateX(0%); } /* loop back */
-    }
-.slides {
+/* ===============================
+       Footer Styles
+=============================== */
+.footer-section {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: var(--footer-padding);
   display: flex;
-  width: 100%;  /* 4 slides */
-  height: 100%;
-  animation: slideShow 30s infinite;
+  flex-direction: column;
+  gap: var(--footer-gap);
 }
 
-.slide {
-  position: relative;
-  width: 100vw;
-  flex-shrink: 0;
+.footer-section a {
+  color: var(--footer-link);
+  text-decoration: none;
 }
 
-.slide img {
-  width: 100%;
-  height: 90vh;
-  object-fit: cover;
+.footer-section a:hover {
+  color: var(--footer-link-hover);
 }
 
-.center-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
+.gem, .geme {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.set {
+  list-style: none;
+  padding: 0;
+}
+
+.set li {
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--footer-hr);
+  margin: 10px 0;
+}
+
+.pag {
   text-align: center;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+       Responsive Footer
+=============================== */
+@media (max-width: 1024px) {
+  .gem, .geme {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .gem, .geme {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gem > div, .geme > div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pag {
+    font-size: 0.8rem;
+  }
 }
 </style>
 
-  <div class="slider">
-  <div class="slides">
-
-    <div class="slide">
-      <img src="images/IMG_7628.jpeg" alt="Image 1">
-      <div class="center-text">
-        <h3>AWARENESS OF</h3>
-        <h2>DRUG ABUSE</h2>
+<footer>
+    <section class="sect footer-section">
+    <div class="gem">
+      <div>
+        <ul class="set">
+          <li><a href="https://nida.nih.gov">Research Topics</a></li>
+          <li><a href="https://nida.nih.gov">Projects Done So Far</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="set">
+          <li><a href="https://nida.nih.gov">Support Us</a></li>
+          <li><a href="https://nida.nih.gov">News and Event</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="set">
+          <li><a href="https://nida.nih.gov">Privacy Notice</a></li>
+          <li><a href="https://nida.nih.gov">Frequently Asked Questions</a></li>
+        </ul>
       </div>
     </div>
 
-    <div class="slide">
-      <img src="images/IMG_8246.jpeg" alt="Image 2">
-      <div class="center-text">
-        <h3>FACTS ABOUT</h3>
-        <h2>DRUGS</h2>
+    <div class="geme">
+      <div>
+        <hr>
+        <ul class="set">
+          <li><a href="https://nida.nih.gov">References</a></li>
+        </ul>
+      </div>
+      <div>
+        <hr>
+        <ul class="set">
+          <li><a href="https://nida.nih.gov">National Institutes of Health</a></li>
+        </ul>
+      </div>
+      <div>
+        <hr>
+        <ul class="set">
+          <li><a href="https://nida.nih.gov">National Institute on Drug Abuse</a></li>
+        </ul>
       </div>
     </div>
 
-    <div class="slide">
-      <img src="images/IMG_8269.jpeg" alt="Image 3">
-      <div class="center-text">
-        <h3>JOIN OUR</h3>
-        <h2>SUPPORT GROUP</h2>
-      </div>
-    </div>
-
-    <div class="slide">
-      <img src="images/IMG_8260.jpeg" alt="Image 4">
-      <div class="center-text">
-        <h3>STOP</h3>
-        <h2>DRUG ABUSE</h2>
-      </div>
-    </div>
-
-  </div>
-</div>
-<!-- 
-<style>
-.slider {
-  position: relative;
-  width: 100%;
-  height: 100vh;      /* full screen slider */
-  overflow: hidden;
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.slide.active {
-  opacity: 1;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slide-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-}
-</style>
-<div class="slider">
-  <div class="slide active">
-    <img src="images/canan.jpg" alt="Slide 1">
-    <div class="slide-text">Welcome to My Site</div>
-  </div>
-  <div class="slide">
-    <img src="images/can.jpg" alt="Slide 2">
-    <div class="slide-text">Facts About Drugs</div>
-  </div>
-  <div class="slide">
-    <img src="images/caca.jpg" alt="Slide 3">
-    <div class="slide-text">Join Our Support Group</div>
-  </div>
-</div> -->
+    <p class="pag">&copy; 2025 My Website | All Rights Reserved</p>
+  </section>
+</footer>

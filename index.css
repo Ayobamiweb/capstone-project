@@ -1,290 +1,393 @@
 
 
 
-
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  margin: 0;
+  padding-top: var(--header-height);
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/*
+       Header & Navbar
+ */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 120px;          /* example height */
-  background:  #41c4f6;
-  z-index: 1000;         /* stays above other content */
-}
-
-body {
-  margin: 0;
-  padding-top: 80px;     /* same as header height */
-   background-color:mintcream;
-font-family:system-ui, -apple-system, BlinkMacSystemFont, 
-'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.navlink {
-    display: flex;
-    gap: 40px;
-    padding: 20px;
-    margin: 15px;
-    list-style: none;
-
-}
-
- a {
-    color:black;
-    text-decoration: none;
-}
-a:hover {
-    color:black;
+  height: var(--header-height);
+  background: var(--header-bg);
+  z-index: 1000;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  font-size: var(--nav-font);
+  cursor: pointer;
 }
-.search-bar {
-    padding-top: 20px;
-}
-/* to make the logo small */
+
 .logo {
-    width:170px;
+  width: var(--logo-width);
 }
 
-.gama
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    max-width: 100%;
-    flex-wrap: wrap;
+.navlinks {
+  display: flex;
+  gap: var(--nav-gap);
+  list-style-type: none;
 }
-.canva {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 700px;
-    height: 600px;
-    /* padding-top: 40px; */
+
+.navlinks li a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
 }
+
+.navlinks li a:hover {
+  color: var(--link-hover);
+}
+
+       /* Headings & Text */
 h1 {
-    color:#000000;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px; 
-    font-size: 2rem;
-    padding: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-} 
+  text-align: center;
+  font-size: 2rem;
+  padding: 50px;
+}
 
-p{
-    font-size:1.5rem;
+p {
+  font-size: 1.5rem;
 }
-.rgb {
-    color:navy;
-    font-size: 1cm;
-    padding-top: 60px;
-    padding-bottom: 30px;
+
+h2 {
+  font-size: 2.5rem;
 }
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* 
+       Sections & Card */
 .sec {
-    background-color:#fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 70px;
-}
-.gema {
-    text-align: center;
-    align-items: center;
-    padding-left: 300px;
+  background-color: var(--section-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
 }
 
 .div5 {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px 0;
+  border-radius: 20px;
+  flex-wrap: wrap;
 }
+
 .div5 img {
-    height: 300px;
-    width: 400px;
-    border-radius: 30px;
+  height: 300px;
+  width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
 }
+/* 
+.gem, .geme {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} */
 
-
-.order {
-    display: flex;
-    justify-content: right;
-    gap: 60px;
-    flex-direction: row;
-    font-size: 1.2cm;
-    padding-top: 30px;
-}
-.order > li {
-    list-style: none;
-}
-/* to give space so that the image will not touch the nav line */
-
-.sect {
-     padding: 10px;
-     margin-top: 40px; 
-    font-size:1.5rem;
-}
-h4 {
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-.cla {
-    margin-bottom: 30px;
-}
-
-hr {
-    border:2px solid lightblue;
-    
-}
-.supp {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    gap: 20px;
-
-}
-/* to make the image more bigger in size and be more seen */
-.sup {
-    display: flex;
-    width: 300px;
-    margin-top: 30px;
-    height: 300px;
-}
-/* i used flex and align items so that my text will be beside the image */
 .game {
-    display: flex;
-   gap: 30px;
-   padding-bottom: 50px;
-   margin-bottom: 20px;
-      align-items: center;
-padding-left: 20px;
-   padding-right: 20px;
-   padding: 30px; 
-} 
-.gam  {
-    padding-left: 30px;
-}
-.gam img{
-    width: 400px;
-    height: 300px;
-} 
-.nam {
-    text-align: center;
-    padding: 30px;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.imag-img{
+.gam img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nam {
+  text-align: center;
+  padding: 30px;
+}
+
+.imag-img {
   width: 300px;
   border-radius: 10px;
-  transition: transform 0.3s ease; /* smooth effect */
+  transition: transform 0.3s ease;
 }
 
 .imag-img:hover {
-  transform: scale(1.2); /* makes image bigger */
+  transform: scale(1.2);
 }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background: lightblue;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding-top: 40px;
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border: 1px solid #ddd;
-    }
- 
-    th {
-      background-color: #0096c7;
-      color: white;
-    }
-    tr:nth-child(even) {
-      background-color: #f0f8ff;
-    }
-    tr:hover {
-      background-color: #dbeeff;
-    }
 .diva {
-    background-color: #ddd;
-    border: 10px solid white;
-    margin-left: 600px;
-    margin-right:500px;
+  background-color: #ddd;
+  border: 10px solid white;
+  margin: auto;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
 }
-.name {
-    font-size: 2rem;
+
+/* 
+       Table Styling
+*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: var(--card-bg);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #0096c7;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+tr:hover {
+  background-color: #dbeeff;
+}
+
+/* 
+       Buttons & Forms*/
 input {
-    width: 350px;
-    height: 80px;
+  width: 100%;
+  max-width: 350px;
+  height: 60px;
+  padding: 10px;
+  font-size: 1rem;
 }
+
 input::placeholder {
-    font-size:x-large;
-    text-align: center;
-   }
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 button {
-    background-color:lightskyblue;
-    padding: 20px;
-    padding-bottom: 20px;
-    font-size: 20px;
+  background-color: var(--button-bg);
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-button a:hover
-{
-    background-color:#ddd;
-    padding: 5px;
+button:hover {
+  background-color: var(--button-hover);
 }
-.par{
-    padding: 30px;
-    font: 1em sans-serif;
-    font-size: 2.7rem;
+
+/* 
+       Paragraphs & Text Blocks
+ */
+.par, .pa {
+  padding: 15px;
+  font-size: 2.5rem;
 }
+
 .para {
-    background-color: lightgray;
-    margin-top: 60px;
-    padding: 10px;
-    font-size: 18px;
-    width: 100%;
-
+  background-color: lightgray;
+  padding: 10px;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 1rem;
+  text-align: center;
 }
-.pa {
-    margin-top: 60px;
-    font-size: 1.2cm;
+.hamburger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+:root {
+  --header-height: 120px;
+  --nav-gap: 40px;
+  --nav-font: 2rem;
+  --body-bg: mintcream;
+  --header-bg: #41c4f6;
+  --link-color: black;
+  --link-hover: black;
+  --logo-width: 170px;
+  --text-color: black;
+  --section-bg: #fafafa;
+  --card-bg: lightblue;
+  --button-bg: lightskyblue;
+  --button-hover: lightskyblue;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 100px;
+    --nav-gap: 20px;
+    --nav-font: 1.5rem;
+    --logo-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    background-color: var(--header-bg);
+    padding: 1rem;
+  }
+
+  .sec, .div5, .game {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .div5 img, .gam img, .imag-img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  input, button {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .hamburger {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  
+}
+}
+@media (max-width: 480px) {
+  :root {
+    --header-height: 70px;
+    --nav-gap: 10px;
+    --nav-font: 1rem;
+    --logo-width: 120px;
+  }
+}
+
+/* 
+       Footer Variables
+*/
+:root {
+  --footer-bg: teal;
+  --footer-text: black;
+  --footer-link: black;
+  --footer-link-hover: black;
+  /* --footer-padding: 30px; */
+  --footer-gap: 5px;
+  --footer-hr: #ffffff50;
+}
+
+/* 
+       Footer Styles */
+.footer-section {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  /* padding: var(--footer-padding); */
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-gap);
+}
+
+.footer-section a {
+  color: var(--footer-link);
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: var(--footer-link-hover);
+}
+ 
+.gem, .geme {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .set {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  font-size: 2rem;
 }
 
-.gem {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--footer-hr);
+  margin: 10px 0;
 }
-.geme {
-    display: flex;
-    justify-content:space-between;
-}
+
 .pag {
-    text-align:center;
- }
- 
+  text-align: center;
+  /* margin-top: 20px; */
+  font-size: 1.5rem;
+}
+
+/* 
+       Responsive Footer*/
+@media (max-width: 1024px) {
+  .gem, .geme {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .gem, .geme {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+/* 
+  .gem > div, .geme > div {
+    margin-bottom: 20px;
+  } */
+}
+
+@media (max-width: 480px) {
+  .pag {
+    font-size: 2rem;
+  }
+}
