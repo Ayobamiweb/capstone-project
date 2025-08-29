@@ -302,10 +302,10 @@ button:hover {
 }
 @media (max-width: 480px) {
   :root {
-    --header-height: 70px;
+    --header-height: 60px;
     --nav-gap: 10px;
     --nav-font: 1rem;
-    --logo-width: 120px;
+    --logo-width: 100px;
   }
 }
 
