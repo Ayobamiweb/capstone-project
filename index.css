@@ -147,7 +147,9 @@ h4 {
 .imag-img:hover {
   transform: scale(1.2);
 }
-
+.sect {
+  padding-left: 20px;
+}
 .diva {
   background-color: #ddd;
   border: 10px solid white;
@@ -242,7 +244,7 @@ button:hover {
   --nav-gap: 40px;
   --nav-font: 2rem;
   --body-bg: mintcream;
-  --header-bg: #41c4f6;
+  --header-bg:  #41c4f6;
   --link-color: black;
   --link-hover: black;
   --logo-width: 170px;
@@ -317,7 +319,7 @@ button:hover {
   --footer-link-hover: black;
   /* --footer-padding: 30px; */
   --footer-gap: 5px;
-  --footer-hr: #ffffff50;
+  --footer-hr:  #41c4f6;
 }
 
 /* 
