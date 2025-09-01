@@ -258,11 +258,21 @@ button:hover {
 
 @media (max-width: 1024px) {
   :root {
-    --header-height: 100px;
+    --header-height: 80px;
     --nav-gap: 20px;
-    --nav-font: 1.5rem;
-    --logo-width: 150px;
+    --nav-font: 1.3rem;
+    --logo-width: 80px;
   }
+  
+    :root {
+      --slider-height:70vh;
+      --slider-font:2rem;
+    }
+   
+  .center-text {
+    padding: 0 2rem;  /* prevent text from touching edges */
+    text-align: center;
+  } 
 }
 
 @media (max-width: 768px) {
