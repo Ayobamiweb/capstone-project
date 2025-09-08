@@ -258,15 +258,15 @@ button:hover {
 
 @media (max-width: 1024px) {
   :root {
-    --header-height: 80px;
+    --header-height: 90px;
     --nav-gap: 20px;
-    --nav-font: 1.3rem;
-    --logo-width: 80px;
+    --nav-font: 1.2rem;
+    --logo-width: 70px;
   }
   
     :root {
-      --slider-height:70vh;
-      --slider-font:2rem;
+      --slider-height:60vh;
+      --slider-font:1.5rem;
     }
    
   .center-text {
@@ -384,6 +384,11 @@ hr {
     flex-direction: row;
     justify-content: space-evenly;
   }
+hr {
+  border: 0;
+  border-top: 1px solid var(--footer-hr);
+  /* margin: 8px 0; */
+}
 }
 
 @media (max-width: 768px) {
